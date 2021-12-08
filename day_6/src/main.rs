@@ -62,7 +62,7 @@ fn part_one() {
 }
 
 fn parse_input_file() -> Vec<i32> {
-    let f = File::open("src/input.txt").expect("Couldn't open input.txt!");
+    let f = File::open("day_6/src/input.txt").expect("Couldn't open input.txt!");
     let lines: Vec<String> = io::BufReader::new(f)
         .lines()
         .map(|l| l.expect("Couldn't parse line"))

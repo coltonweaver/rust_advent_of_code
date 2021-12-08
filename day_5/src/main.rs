@@ -147,7 +147,7 @@ fn get_dimensions_of_map(line_vec: &Vec<Line>) -> (usize, usize) {
 }
 
 fn parse_input_file() -> Vec<Line> {
-    let f = File::open("src/input.txt").expect("Couldn't open input.txt!");
+    let f = File::open("day_5/src/input.txt").expect("Couldn't open input.txt!");
     let raw_lines: Vec<String> = io::BufReader::new(f)
         .lines()
         .map(|l| l.expect("Could not parse line in input file!"))

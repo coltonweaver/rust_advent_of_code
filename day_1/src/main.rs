@@ -10,7 +10,7 @@ fn main() {
 
 fn part_one() {
     println!("Running day 1 part 1 advent of code!");
-    let f = File::open("src/input.txt").expect("Cannot open file!");
+    let f = File::open("day_1/src/input.txt").expect("Cannot open file!");
     let lines = io::BufReader::new(f).lines();
 
     let mut prev_line = -1;
@@ -32,7 +32,7 @@ fn part_one() {
 
 fn part_two() {
     println!("Running day 1 part 2 advent of code!");
-    let f = File::open("src/input.txt").expect("Cannot open file!");
+    let f = File::open("day_1/src/input.txt").expect("Cannot open file!");
     let lines: Vec<i32> = io::BufReader::new(f)
         .lines()
         .map(|l| {

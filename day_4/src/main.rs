@@ -73,7 +73,7 @@ impl Board {
                 return true;
             }
         }
-        
+
         false
     }
 
@@ -105,7 +105,7 @@ fn main() {
 
 fn part_one() {
     println!("Running day 4 part 1 of advent of code!");
-    let f = File::open("src/input.txt").expect("Could not open file!");
+    let f = File::open("day_4/src/input.txt").expect("Could not open file!");
     let mut lines: Vec<String> = io::BufReader::new(f)
         .lines()
         .map(|l| l.expect("Could not parse line"))
@@ -151,7 +151,7 @@ fn part_one() {
 
 fn part_two() {
     println!("Running day 4 part 2 of advent of code!");
-    let f = File::open("src/input.txt").expect("Could not open file!");
+    let f = File::open("day_4/src/input.txt").expect("Could not open file!");
     let mut lines: Vec<String> = io::BufReader::new(f)
         .lines()
         .map(|l| l.expect("Could not parse line"))
@@ -190,7 +190,7 @@ fn part_two() {
             if board.is_already_completed() {
                 continue;
             }
-            
+
             board.register_number(num);
             if board.check_win() {
                 let sum = board.get_unmarked_sum();

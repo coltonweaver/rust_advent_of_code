@@ -10,7 +10,7 @@ fn main() {
 
 fn part_one() {
     println!("Running day 2 part 1 advent of code!");
-    let f = File::open("src/input.txt").expect("Could not open file!");
+    let f = File::open("day_2/src/input.txt").expect("Could not open file!");
     let lines: Vec<String> = io::BufReader::new(f)
         .lines()
         .map(|l| l.expect("Could not parse line"))
@@ -37,7 +37,7 @@ fn part_one() {
 
 fn part_two() {
     println!("Running day 2 part 2 advent of code!");
-    let f = File::open("src/input.txt").expect("Could not open file!");
+    let f = File::open("day_2/src/input.txt").expect("Could not open file!");
     let lines: Vec<String> = io::BufReader::new(f)
         .lines()
         .map(|l| l.expect("Could not parse line"))
